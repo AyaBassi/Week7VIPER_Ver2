@@ -16,6 +16,10 @@
 		F3990BDC2A10473D0049DFEF /* Week7FriViper2ndVersionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3990BDB2A10473D0049DFEF /* Week7FriViper2ndVersionTests.swift */; };
 		F3990BE62A10473D0049DFEF /* Week7FriViper2ndVersionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3990BE52A10473D0049DFEF /* Week7FriViper2ndVersionUITests.swift */; };
 		F3990BE82A10473D0049DFEF /* Week7FriViper2ndVersionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3990BE72A10473D0049DFEF /* Week7FriViper2ndVersionUITestsLaunchTests.swift */; };
+		F3990BF62A104BC50049DFEF /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3990BF52A104BC50049DFEF /* Presenter.swift */; };
+		F3990BF82A104BD10049DFEF /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3990BF72A104BD10049DFEF /* Interactor.swift */; };
+		F3990BFA2A104BED0049DFEF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3990BF92A104BED0049DFEF /* Router.swift */; };
+		F3990BFC2A104C040049DFEF /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3990BFB2A104C040049DFEF /* Entity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		F3990BE12A10473D0049DFEF /* Week7FriViper2ndVersionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Week7FriViper2ndVersionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3990BE52A10473D0049DFEF /* Week7FriViper2ndVersionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week7FriViper2ndVersionUITests.swift; sourceTree = "<group>"; };
 		F3990BE72A10473D0049DFEF /* Week7FriViper2ndVersionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week7FriViper2ndVersionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F3990BF52A104BC50049DFEF /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		F3990BF72A104BD10049DFEF /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		F3990BF92A104BED0049DFEF /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		F3990BFB2A104C040049DFEF /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +107,9 @@
 		F3990BC32A10473A0049DFEF /* Week7FriViper2ndVersion */ = {
 			isa = PBXGroup;
 			children = (
+				F3990BF42A104B710049DFEF /* VIPER */,
 				F3990BC42A10473A0049DFEF /* AppDelegate.swift */,
 				F3990BC62A10473A0049DFEF /* SceneDelegate.swift */,
-				F3990BC82A10473A0049DFEF /* ViewController.swift */,
 				F3990BCA2A10473A0049DFEF /* Main.storyboard */,
 				F3990BCD2A10473D0049DFEF /* Assets.xcassets */,
 				F3990BCF2A10473D0049DFEF /* LaunchScreen.storyboard */,
@@ -125,6 +133,18 @@
 				F3990BE72A10473D0049DFEF /* Week7FriViper2ndVersionUITestsLaunchTests.swift */,
 			);
 			path = Week7FriViper2ndVersionUITests;
+			sourceTree = "<group>";
+		};
+		F3990BF42A104B710049DFEF /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				F3990BF92A104BED0049DFEF /* Router.swift */,
+				F3990BC82A10473A0049DFEF /* ViewController.swift */,
+				F3990BF52A104BC50049DFEF /* Presenter.swift */,
+				F3990BF72A104BD10049DFEF /* Interactor.swift */,
+				F3990BFB2A104C040049DFEF /* Entity.swift */,
+			);
+			path = VIPER;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +280,10 @@
 			files = (
 				F3990BC92A10473A0049DFEF /* ViewController.swift in Sources */,
 				F3990BC52A10473A0049DFEF /* AppDelegate.swift in Sources */,
+				F3990BFC2A104C040049DFEF /* Entity.swift in Sources */,
+				F3990BF82A104BD10049DFEF /* Interactor.swift in Sources */,
+				F3990BF62A104BC50049DFEF /* Presenter.swift in Sources */,
+				F3990BFA2A104BED0049DFEF /* Router.swift in Sources */,
 				F3990BC72A10473A0049DFEF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
