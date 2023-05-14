@@ -6,6 +6,14 @@
 //
 
 import Foundation
-struct Entity {
-    
+
+
+
+struct Entity:Decodable {
+let products : [Product]
+}
+
+struct Product : Decodable {
+let id:Int
+let title:String
 }

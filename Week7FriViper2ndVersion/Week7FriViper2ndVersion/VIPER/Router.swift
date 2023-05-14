@@ -17,14 +17,18 @@ class Router: AnyRouterProtocol {
     var rootView: AnyViewProtocol_UIViewController?
     
     static func start()-> AnyRouterProtocol {
+        // Assign VIP_R
         let router = Router()
-        let viewController : AnyViewProtocol = ViewController()
-    
+        var viewController  : AnyViewProtocol       = ViewController()
+        var presenter       : AnyPresenterProtocol  = Presenter()
+        var interactor      : AnyInteractorProtocol = Interactor()
         
-        
-        
-        
-        
+        // set the 5 loose dependencies
+        viewController.presenter = presenter
+        interactor.presenter = presenter
+        presenter.router = router
+        presenter.view = viewController
+        presenter.interactor = interactor
         
         router.rootView = viewController as? AnyViewProtocol_UIViewController
         return router
